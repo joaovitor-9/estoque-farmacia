@@ -121,7 +121,8 @@ footer { visibility: hidden; }
     background: #FFFFFF;
     box-shadow: 0 3px 10px rgba(43,34,115,0.06);
 }
-.st-key-tabela [data-testid="stVerticalBlock"] { gap: 0; }
+.st-key-tabela,
+.st-key-tabela [data-testid="stVerticalBlock"] { gap: 0 !important; }
 .st-key-tabela [data-testid="stHorizontalBlock"] {
     align-items: center;
     padding: .25rem 1rem;
@@ -130,16 +131,21 @@ footer { visibility: hidden; }
 }
 .st-key-tabela [data-testid="stMarkdown"],
 .st-key-tabela [data-testid="stMarkdown"] > div { height: auto !important; min-height: 1.6rem; display: flex; align-items: center; }
-.st-key-tabela [data-testid="stVerticalBlock"] > :last-child [data-testid="stHorizontalBlock"] { border-bottom: none; }
+.st-key-tabela > :last-child [data-testid="stHorizontalBlock"] { border-bottom: none; }
+.st-key-tabela [data-testid="stColumn"] { display: flex; align-items: center; }
+.st-key-tabela [data-testid="stColumn"] > [data-testid="stVerticalBlock"] { width: 100%; justify-content: center; }
+.st-key-tabela [data-testid="stButton"] { margin: 0 !important; display: flex; justify-content: center; }
 .st-key-tabela [data-testid="stHorizontalBlock"]:has(.m-cab) {
-    background: var(--azul-claro);
-    border-bottom: 1px solid #CBD0E6;
+    background: var(--azul);
+    border-bottom: 1px solid var(--azul);
     min-height: 2.6rem;
 }
-.st-key-tabela .m-cab-t { color: var(--azul); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; }
+.st-key-tabela [data-testid="stColumn"]:last-child { justify-content: center; }
+.st-key-tabela .m-cab-t { color: #FFFFFF; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; }
 .st-key-tabela [data-testid="stHorizontalBlock"]:has(.m-vencido) { background: #FDEEEE; }
 .st-key-tabela [data-testid="stHorizontalBlock"]:has(.m-vence) { background: #FFF8E1; }
 .st-key-tabela [data-testid="stHorizontalBlock"]:has(.m-repor) { background: #EEF2FD; }
+.st-key-tabela [data-testid="stMarkdownContainer"] { margin: 0 !important; }
 .st-key-tabela [data-testid="stMarkdownContainer"] p { margin: 0; font-size: .92rem; }
 .st-key-tabela button { min-height: 1.9rem; padding: .05rem .9rem; white-space: nowrap; }
 .st-key-tabela button p { white-space: nowrap; font-size: .85rem; }

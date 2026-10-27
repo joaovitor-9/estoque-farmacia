@@ -164,7 +164,7 @@ def indicadores(produtos):
         st.error(f"**Atenção:** {len(vencidos)} produto(s) vencido(s). Retire da prateleira: {nomes}.", icon=":material/warning:")
 
 
-LARGURAS = [3.3, 1.2, 1.1, 0.7, 0.8, 1.6, 1.3]
+LARGURAS = [3.2, 1.2, 1.2, 0.7, 0.8, 1.5, 1.1]
 
 
 def linha_cabecalho():
@@ -279,7 +279,7 @@ def main():
 
     st.markdown(
         "<div class='rodape'>Farmácia Descontão do Trabalhador · Projeto de extensão "
-        "de Gestão de Projetos · Sistemas de Informação</div>",
+        "de Gestão de Projetos · Engenharia de Software</div>",
         unsafe_allow_html=True,
     )
 
