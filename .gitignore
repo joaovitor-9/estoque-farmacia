@@ -1,0 +1,14 @@
+# Segredos (nunca publicar)
+.streamlit/secrets.toml
+*.json
+.env
+*.pem
+*.key
+
+# Dados e cópias de segurança do estoque
+*.xlsx
+*.csv
+
+# Arquivos gerados
+__pycache__/
+venv/
